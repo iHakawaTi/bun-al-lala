@@ -1,0 +1,15 @@
+# Backups
+*.bak
+*.tmp
+
+# OS Files
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log

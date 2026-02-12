@@ -1,15 +1,21 @@
 :root {
     --primary-red: #e30512;
     --primary-red-dark: #b8040e;
-    /* Slightly darker shade for hovers */
-    --coffee-brown: #6B4423;
+
+    /* New Palette */
+    --coffee-brown: #6B3E26;
+    /* Roasted Bean Brown */
     --coffee-light: #8B4513;
-    --coffee-dark: #4A2C1A;
-    --coffee-darker: #2C1810;
-    /* Very dark background */
-    --coffee-groove: #2C1810;
-    --cream: #FFF9F0;
+    /* Kept for gradients/accents if needed, or map to same? */
+    --coffee-dark: #2B1A14;
+    /* Deep Espresso */
+    --coffee-darker: #111111;
+    /* Charcoal Black */
+
+    --cream: #F2E8DC;
+    /* Warm Cream */
     --cream-light: #FDFBF7;
+    /* Kept lighter for contrast */
     --white: #FFFFFF;
 
     --font-heading: 'Cairo', sans-serif;
@@ -174,23 +180,6 @@ ul {
     pointer-events: auto;
 }
 
-/* Continuous Floating Animation */
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0) scale(1);
-    }
-
-    50% {
-        transform: translateY(-10px) scale(1);
-    }
-}
-
-.hero-logo-container.floating {
-    animation: float 4s ease-in-out infinite;
-}
-
 /* Logo Image */
 .hero-logo-img {
     max-width: 320px;
@@ -327,8 +316,8 @@ ul {
     display: flex;
     gap: 2.5rem;
     align-items: center;
-    flex-direction: row-reverse;
-    /* Right to Left visual order */
+    flex-direction: row;
+    /* Default row, browser handles RTL */
 }
 
 .nav-link {

@@ -39,6 +39,11 @@ function initHeroVideo() {
         // After video fades, reveal the logo
         setTimeout(() => {
             logo.classList.add('visible');
+
+            // Start floating animation after entrance transition (2s)
+            setTimeout(() => {
+                logo.classList.add('floating');
+            }, 2000);
         }, 600); // Start logo reveal 600ms into the video fade
     });
 

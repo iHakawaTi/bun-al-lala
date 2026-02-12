@@ -829,6 +829,32 @@ footer {
     color: var(--coffee-light);
 }
 
+.contact-row {
+    display: flex;
+    justify-content: flex-end;
+    /* Align to right for RTL text start */
+    align-items: center;
+    gap: 10px;
+    direction: rtl;
+    /* Ensure container is RTL */
+}
+
+/* Icon on the left side (which is end in RTL, wait. Left is end? No start is Right) */
+/* If we want Text [Icon], and we are RTL. */
+/* Text is first, Icon is second. */
+/* Visual: [Icon] [Text] ? User said: "facebook adn isntagramicons to the left of the text" */
+/* So: [Icon] ...gap... [Text] */
+/* If RTL: Start is Right. */
+/* So <p>Text Icon</p> renders as: Text Icon (Right to Left). */
+/* Meaning Icon is on the Left. */
+/* My HTML: <span>Text</span> <span>Icon</span> */
+/* RTL Flow: [Text] [Icon] -> Visual: [Text] is Right, [Icon] is Left. */
+/* Yes, this places icon on Left. */
+
+.contact-row .icon {
+    /* Ensure icon doesn't get messed up by LTR spans */
+}
+
 /* Responsiveness */
 @media (max-width: 1024px) {
     html {

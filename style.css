@@ -855,8 +855,8 @@ footer {
 
 .contact-row {
     display: flex;
-    justify-content: flex-end;
-    /* Align to right for RTL text start */
+    justify-content: flex-start;
+    /* Align to right (Start in RTL) */
     align-items: center;
     gap: 10px;
     direction: rtl;
